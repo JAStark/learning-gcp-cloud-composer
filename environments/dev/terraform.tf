@@ -6,8 +6,8 @@ terraform {
     }
   }
   backend "gcs" {
-    bucket = "flask-app-tfstate"
-    prefix = "env/learning_cloud_composer/dev"
+    bucket = "learning_cloud_composer"
+    prefix = "env/dev"
   }
 }
 
