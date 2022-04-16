@@ -13,7 +13,7 @@ terraform {
 
 provider "google" {
   # Configuration options
-  project = "silver-antonym-326607"
-  region  = "europe-west2"
+  project = var.project
+  region  = var.region
 
 }

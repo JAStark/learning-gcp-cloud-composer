@@ -1,6 +1,6 @@
 resource "google_composer_environment" "demo" {
-  name    = "demo-environment"
-  region  = "europe-west2"
+  name    = "dev-demo-environment"
+  region  = var.region 
 
   config {
     software_config {
