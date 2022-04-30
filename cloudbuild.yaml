@@ -17,7 +17,7 @@ steps:
   - |
       if [ -d "environments/$BRANCH_NAME/" ]; then
         cd environments/$BRANCH_NAME
-        terraform init
+        terraform init -reconfigure
       else
         for dir in environments/*/
         do
@@ -41,7 +41,7 @@ steps:
   - |
       if [ -d "environments/$BRANCH_NAME/" ]; then
         cd environments/$BRANCH_NAME
-        terraform plan -lock=false 
+        terraform plan
       else
         for dir in environments/*/
         do
