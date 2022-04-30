@@ -6,7 +6,7 @@ terraform {
     }
   }
   backend "gcs" {
-    bucket = "learning_cloud_composer"
+    bucket = "learning_cloud_composr_tfstate"
     prefix = "env/dev"
   }
 }
