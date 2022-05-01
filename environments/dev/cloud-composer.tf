@@ -1,7 +1,7 @@
-# resource "google_composer_environment" "demo" {
-#   provider  = google-beta
-#   name      = "dev-demo-environment"
-#   region    = var.region
+resource "google_composer_environment" "demo" {
+  provider  = google-beta
+  name      = "dev-demo-environment"
+  region    = var.region
 
 #   config {
 #     software_config {
@@ -9,4 +9,4 @@
 #     }
 #   }
 
-# }
+}
