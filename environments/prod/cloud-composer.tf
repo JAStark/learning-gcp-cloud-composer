@@ -1,5 +1,4 @@
 resource "google_composer_environment" "demo" {
-  provider  = google-beta
   name      = "prod-demo-environment"
   region    = var.region
 
