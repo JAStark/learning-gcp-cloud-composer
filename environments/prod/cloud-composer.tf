@@ -3,10 +3,10 @@ resource "google_composer_environment" "demo" {
   name      = "prod-demo-environment"
   region    = var.region
 
-  config {
-    software_config {
-      image_version = "composer-2.0.11-airflow-2.2.3"
-    }
-  }
+#   config {
+#     software_config {
+#       image_version = "composer-2.0.11-airflow-2.2.3"
+#     }
+#   }
 
 }
